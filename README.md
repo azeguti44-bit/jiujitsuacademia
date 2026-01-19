@@ -45,7 +45,7 @@ python manage.py createsuperuser
 
 | Método | Endpoint | Descrição | Exemplo de JSON |
 | :--- | :--- | :--- | :--- |
-| `POST` | `/api/login/` | Logar como staff. | <pre> {"email" : "staff@email.com",  "senha": "123..."} </pre> |
+| `POST` | `/api/login/` | Logar como staff. | <pre> {"email" : <span> "staff@email.com" </span>,  "senha": "123..."} </pre> |
 | `GET` | `/api/aluno/` | Lista todos os alunos. | - |
 | `POST` | `/api/aula_realizada/` | Registra presenças. |<pre> {"qtd": int,  "email_aluno": "jr@email.com"} </pre> |
 | `GET` | `/api/progresso_aluno/` | Progresso do aluno. | <pre> api/progresso_aluno/?email_aluno=jr@email.com` </pre>|
@@ -64,6 +64,22 @@ python manage.py createsuperuser
 
 ### 1. Preparação
 ```bash
-git clone [https://github.com/SEU_USUARIO/jiujitsuacademia.git](https://github.com/SEU_USUARIO/jiujitsuacademia.git)
+# 1. Clone o repositório
+git clone https://github.com/SEU_USUARIO/jiujitsuacademia.git
+cd jiujitsuacademia
+
+# 2. Crie e ative o ambiente virtual
+python -m venv venv
+# No Windows:
+source venv/Scripts/activate
+# No Linux/Mac:
+source venv/bin/activate
+
+# 3. Instale as dependências
 pip install -r requirements.txt
+
+# 4. Execute as migrações do banco de dados
 python manage.py migrate
+
+# 5. Inicie o servidor
+python manage.py runserver
