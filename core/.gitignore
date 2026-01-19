@@ -1,0 +1,26 @@
+# Ambientes Virtuais
+venv/
+env/
+.venv/
+ENV/
+
+# Banco de Dados (não envie seus dados locais)
+*.sqlite3
+
+# Python (arquivos compilados e cache)
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+
+# Configurações de IDE (VS Code, PyCharm)
+.vscode/
+.idea/
+
+# Arquivos de ambiente/segredo (se você usar .env mais tarde)
+.env
+local_settings.py
+
+# Pasta de arquivos estáticos e media coletados
+static/
+media/
