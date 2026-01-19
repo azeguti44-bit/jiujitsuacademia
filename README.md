@@ -44,11 +44,11 @@ python manage.py createsuperuser
 
 | Método | Endpoint | Descrição | Exemplo de JSON |
 | :--- | :--- | :--- | :--- |
-| `POST` | `/api/login/` | Logar como staff. | </pre>{"email": "staff@email.com",  "senha": "123..."} </pre>|
+| `POST` | `/api/login/` | Logar como staff. | <pre> {"email" : "staff@email.com",  "senha": "123..."} </pre> |
 | `GET` | `/api/aluno/` | Lista todos os alunos. | - |
-| `POST` | `/api/aula_realizada/` | Registra presenças. |</pre> {"qtd": int,  "email_aluno": "jr@email.com"}</pre> |
-| `GET` | `/api/progresso_aluno/` | Progresso do aluno. | </pre> api/progresso_aluno/?email_aluno=jr@email.com` </pre>|
-| `PUT` | `/api/aluno/{id}/` | Atualiza dados/faixa. | </pre>{ "nome":"Melly","email":"jr@email.com","faixa": "M","data_nascimento": "2003-03-22"} </pre>|
+| `POST` | `/api/aula_realizada/` | Registra presenças. |<pre> {"qtd": int,  "email_aluno": "jr@email.com"} </pre> |
+| `GET` | `/api/progresso_aluno/` | Progresso do aluno. | <pre> api/progresso_aluno/?email_aluno=jr@email.com` </pre>|
+| `PUT` | `/api/aluno/{id}/` | Atualiza dados/faixa. | <pre> { "nome":"Melly","email":"jr@email.com","faixa": "M","data_nascimento": "2003-03-22"} </pre>|
 
 ### 🔵 Área do Aluno
 | Método | Endpoint | Descrição | Exemplo de JSON |
