@@ -29,11 +29,12 @@ Focado na experiência do usuário e transparência:
 
 ---
 
-🔑 Configuração de Acesso (Staff)
+## 🔑 Configuração de Acesso (Staff) ##
 Como o projeto utiliza autenticação via Token (Bearer), para testar as rotas do Staff, siga estes passos:
 
-## Crie um Superusuário ##   
+### Crie um Superusuário ###   
 No terminal, execute o comando abaixo e siga as instruções para definir e-mail e senha:  
+
 python manage.py createsuperuser 
 
 
